@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+/*
+.outer-box {
+    width: 400px;
+    height: 400px;
+    background-color: green;
+}
+
+.outer-box .box {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: solid 10px black;
+    margin: 50px;
+    padding: 25px;
+}
+
+.outer-box .box .inner-box {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+*/
+
+nav {
+    background-color: #0f1d2d;
+}
+
+nav * {
+    color: #cbd5e1;
+}
+
+nav .navbar__container {
+    width: 100%;
+    max-width: 1104px;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 30px;
+}
+
+nav .navbar__container .navbar__menu {
+    display: flex;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+nav .navbar__container .navbar__menu .navbar__menu-item a {
+    cursor: pointer;
+    transition: all ease-in-out 0.15s;
+}
+
+nav .navbar__container .navbar__menu .navbar__menu-item a:hover {
+    color: #2275ea;
+}
+
+nav .navbar__container .navbar__actions {
+    display: flex;
+    gap: 20px;
+}
+
+nav .navbar__container .navbar__logo img {
+    height: 32px;
+    width: 32px;
+}
