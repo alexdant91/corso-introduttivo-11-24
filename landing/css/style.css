@@ -16,10 +16,6 @@ html, body {
     scroll-behavior: smooth;
 }
 
-body {
-    height: 3000px;
-}
-
 p, span, a, div, button {
     color: var(--text-color);
     font-size: 1rem;
