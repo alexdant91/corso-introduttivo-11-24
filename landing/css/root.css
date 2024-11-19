@@ -1,0 +1,19 @@
+:root {
+    /* Viewport */
+    --max-width: 1480px;
+    /* Sizes */
+    --general-padding: 3rem; /* 16px * 3rem = 48px */
+    /* Colors */
+    --primary-color: #ffb411;
+    --text-color: #1e1c2a;
+    --bg-color: #ffffff;
+    --btn-hover-color: #ffa400;
+    /* Font */
+    --font-family: "Poppins", sans-serif;
+    --h1-size: 4rem; /* 16px * 4rem = 64px */ 
+    --h2-size: 2.25rem; /* 16px * 2.25rem = 36px */
+    /* Navbar */
+    --navbar-h: 64px;
+    --logo-size: 1.25rem; /* 16px * 1.25rem = 20px */
+    --nav-box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+}
