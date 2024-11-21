@@ -1,0 +1,39 @@
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.p-12 {
+    padding: var(--general-padding);
+}
+
+.px-12 {
+    padding: 0 var(--general-padding);
+}
+
+.py-12 {
+    padding: var(--general-padding) 0;
+}
