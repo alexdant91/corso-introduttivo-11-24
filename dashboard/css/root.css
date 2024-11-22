@@ -3,6 +3,8 @@
 :root {
     /* Sizes */
     --max-width: 1270px;
+    /* Spaces */
+    --general-padding: 2rem;
     /* Colors */
     --primary-color: #8570ff;
     --secondary-color: #f3f4f6;

@@ -32,6 +32,76 @@ p, a, span, div, li {
     font-size: 0.85rem;
 }
 
+/* Components */
+
+.search__input {
+    position: relative;
+}
+
+.search__input input {
+    --shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-colored: 0 1px 2px 0 var(--shadow-color);
+    height: 38px;
+    width: 210px;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: var(--ring-offset-shadow, 0 0 #0000), var(--ring-shadow, 0 0 #0000), var(--shadow);
+    border: 1px solid var(--btn-bg);
+    padding-left: 38px;
+}
+
+.search__input svg {
+    position: absolute;
+    z-index: 2;
+    fill: var(--icon-color);
+    cursor: pointer;
+    top: 11px;
+    left: 11px;
+}
+
+.btn-filter {
+    height: 38px;
+    width: 38px;
+    box-shadow: var(--ring-offset-shadow, 0 0 #0000), var(--ring-shadow, 0 0 #0000), var(--shadow);
+    border: 1px solid var(--btn-bg);
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-filter svg {
+    fill: var(--icon-color);
+}
+
+.btn {
+    border-radius: 8px;
+    height: 38px;
+    padding: 0 19px;
+    cursor: pointer;
+}
+
+.btn.btn-inverse {
+    background-color: black;
+    color: white;
+    border: 1px solid var(--text-color);
+}
+
+.btn.btn-inverse:hover {
+    background-color: var(--text-color);
+}
+
+.label {
+    padding: 0.25rem 0.625rem;
+    border-radius: 50px;
+}
+
+.label.label-green {
+    color: #239f52;
+    background-color: #dcf5e4;
+}
+
 /* Main */
 
 .main {
@@ -79,8 +149,8 @@ p, a, span, div, li {
 
 .main .content {
     height: 100vh;
-    width: calc(100vw - var(--sidebar-w));
-    /* flex-grow: 1; */
+    /* width: calc(100vw - var(--sidebar-w)); */
+    flex-grow: 1;
     overflow-y: auto;
     background-color: var(--secondary-color);
 }
@@ -140,8 +210,25 @@ p, a, span, div, li {
     border-radius: 50%;
 }
 
+.main .content .body .body__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.main .content .body .body__top h2 {
+    font-size: 2rem;
+}
+
+.main .content .body .body__top .body__top-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 @media screen and (max-width: 860px) {
     .main .sidebar {
-        transform: translateX(-100%);
+        /* transform: translateX(-100%); */
+        margin-left: -100%;
     }
 }
